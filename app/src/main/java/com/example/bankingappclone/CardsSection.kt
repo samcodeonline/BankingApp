@@ -66,7 +66,7 @@ val cards = listOf(
 
 fun getGradient(
     startColor: Color,
-    endColor: Color,
+    endColor: Color
 ): Brush {
     return Brush.horizontalGradient(
         colors = listOf(startColor, endColor)
@@ -77,8 +77,8 @@ fun getGradient(
 @Composable
 fun CardsSection() {
     LazyRow {
-        items(cards.size) { index ->
-            CardItem(index)
+        items(cards.size) {
+            CardItem(it)
         }
     }
 }
@@ -107,7 +107,6 @@ fun CardItem(
             .height(160.dp)
             .clickable { }
             .padding(vertical = 12.dp, horizontal = 16.dp),
-
             verticalArrangement = Arrangement.SpaceBetween) {
             Image(
                 painter = image,
@@ -135,8 +134,6 @@ fun CardItem(
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold
             )
-
-
         }
     }
 }
