@@ -48,6 +48,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Preview
 @Composable
 fun HomeScreen() {
@@ -63,18 +64,10 @@ fun HomeScreen() {
             CardsSection()
             Spacer(modifier = Modifier.height((16.dp)))
             FinanceSection()
-//            Spacer(modifier = Modifier.height((16.dp)))
             CurrenciesSection()
-
         }
     }
 }
-
-
-
-
-
-
 
 
 

@@ -82,7 +82,7 @@ fun CurrenciesSection() {
         contentAlignment = Alignment.BottomCenter
     ) {
 
-
+//        val thisIsBox = this
         Column(
             modifier = Modifier
                 .clip(RoundedCornerShape(topStart = 30.dp, topEnd = 30.dp))
@@ -103,8 +103,10 @@ fun CurrenciesSection() {
                         isVisible = !isVisible
                         iconState = if (isVisible) {
                             Icons.Rounded.KeyboardArrowUp
+//                            KeyboardArrowUp
                         } else {
                             Icons.Rounded.KeyboardArrowDown
+//                            KeyboardArrowDown
                         }
                     }) {
                     Icon(
@@ -184,7 +186,6 @@ fun CurrenciesSection() {
                                     index = index, width = width
                                 )
                             }
-
                         }
                     }
                 }
@@ -224,8 +225,7 @@ fun CurrencyItem(index: Int, width: Dp) {
             }
 
             Text(
-                modifier = Modifier
-                    .padding(start = 10.dp),
+                modifier = Modifier.padding(start = 10.dp),
                 text = currency.name,
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
