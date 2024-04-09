@@ -102,10 +102,10 @@ fun CurrenciesSection() {
                     .clickable {
                         isVisible = !isVisible
                         iconState = if (isVisible) {
-                            Icons.Rounded.KeyboardArrowUp
+                            Icons.Rounded.KeyboardArrowDown
 //                            KeyboardArrowUp
                         } else {
-                            Icons.Rounded.KeyboardArrowDown
+                            Icons.Rounded.KeyboardArrowUp
 //                            KeyboardArrowDown
                         }
                     }) {
